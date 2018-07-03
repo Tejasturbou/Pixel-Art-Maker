@@ -6,8 +6,11 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.menu {
+.hide {
     display: none;
+}
+
+.menu {
     float: left;
 }
 
@@ -26,7 +29,7 @@ h1 {
     margin: 0.5em;
     color: #c0b283;
     display: inline;
-    /*position: relative;*/
+    position: relative;
     /*#373737;*/
     /*#c0b283;*/
 }
@@ -60,9 +63,9 @@ td {
 }
 
 .choose {
-    display: inline;
+    width: 0;  /*377px*/
+    display: none;
     position: absolute;
-    width: 377px;
     height: 100%;
     left: 0px;
     top: 0px;
@@ -93,6 +96,7 @@ td {
     right: 70px;
     font-weight: 600;
     font-size: 22px;
+    text-align: left;
 
 }
 
@@ -102,14 +106,16 @@ input[type=number] {
 }
 
 #inputHeight, #inputWeight{
-    margin: 2%;
+    margin-bottom: 12%;
+    display: block;
+
 }
 
 #submit {
     position: absolute;
-    width: 299px;
-    height: 75px;
-    left: 37px;
+    width: 262px;
+    height: 62px;
+    left: 48px;
     top: 390px;
 
     background: #C0B283;
@@ -119,6 +125,24 @@ input[type=number] {
     font-size: 36px;
     color: #FFFFFF;
     cursor: pointer;
+}
+
+#close {
+    position: absolute;
+    width: 88px;
+    height: 88px;
+    left: 142px;
+    top: 700px;
+    border-radius: 92px;
+    background: #C0B283;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+#close svg {
+    position: static;
+    fill: #FFFFFF;
+    width: 71px;
+    height: 86px;
 }
 
 .canvas {

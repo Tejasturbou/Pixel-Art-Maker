@@ -1,5 +1,10 @@
 alert('1.Select Grid size and submit\n2.Select Color\n3.Fill color using left click and remove color using right click');
 
+$('.menu').click(function(){
+	$(this).addClass('hide');
+	$('#shift').toggleClass('canvas');
+});
+
 let row, column;
 $("input[type = 'submit']").click(function(evt){
 	evt.preventDefault();
