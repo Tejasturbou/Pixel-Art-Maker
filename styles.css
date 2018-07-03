@@ -64,12 +64,14 @@ td {
 
 .choose {
     width: 0;  /*377px*/
-    display: none;
     position: absolute;
     height: 100%;
     left: 0px;
     top: 0px;
     background-color: #C4C4C4;
+    overflow-x: hidden;
+    transition: width 2s;
+    z-index: 99;
 }
 
 #grid-size {
@@ -108,7 +110,6 @@ input[type=number] {
 #inputHeight, #inputWeight{
     margin-bottom: 12%;
     display: block;
-
 }
 
 #submit {
@@ -136,6 +137,7 @@ input[type=number] {
     border-radius: 92px;
     background: #C0B283;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
 }
 
 #close svg {
@@ -146,5 +148,6 @@ input[type=number] {
 }
 
 .canvas {
-    margin-left: 28%;
+    margin-left: 0%;
+    transition: margin-left 2s;
 }

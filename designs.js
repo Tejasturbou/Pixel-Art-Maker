@@ -2,7 +2,8 @@ alert('1.Select Grid size and submit\n2.Select Color\n3.Fill color using left cl
 
 $('.menu').click(function(){
 	$(this).addClass('hide');
-	$('#shift').toggleClass('canvas');
+	$('.canvas').css('margin-left', '28%');
+	$('.choose').css('width', '377px');
 });
 
 let row, column;
@@ -17,6 +18,10 @@ $("input[type = 'submit']").click(function(evt){
 		evt.end();
 	}
 
+	$('.choose').css('width', '0');
+	$('.canvas').css('margin-left', '0');
+	$('.menu').removeClass('hide');
+
 	makeGrid();
 	let pixels = $('.pixel');
 	pixels.click(function(){
@@ -30,6 +35,12 @@ $("input[type = 'submit']").click(function(evt){
 	});
 
 
+});
+
+$('#close').click(function(){
+	$('.choose').css('width', '0');
+	$('.canvas').css('margin-left', '0');
+	$('.menu').removeClass('hide');
 });
 
 function makeGrid() {
