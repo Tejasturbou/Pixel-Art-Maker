@@ -12,6 +12,7 @@ body {
 
 .menu {
     float: left;
+    cursor: pointer;
 }
 
 div svg{
@@ -150,4 +151,9 @@ input[type=number] {
 .canvas {
     margin-left: 0%;
     transition: margin-left 2s;
+}
+
+#art {
+    opacity: 0;
+    transition: opacity 6s;
 }

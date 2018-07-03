@@ -23,6 +23,9 @@ $("input[type = 'submit']").click(function(evt){
 	$('.menu').removeClass('hide');
 
 	makeGrid();
+
+	$('#art').css('opacity','1');
+
 	let pixels = $('.pixel');
 	pixels.click(function(){
 		const colour = $('#colorPicker').val();
