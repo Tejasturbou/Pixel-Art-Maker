@@ -3,30 +3,49 @@
 <head>
     <title>Pixel Art Maker!</title>
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-    <h1>Pixel Art Maker</h1>
+    <div class="choose">
+        <h2 id="grid-size">Choose Grid Size</h2>
+        <form id="sizePicker">
+            <div id="select">
+                Rows:
+                <input type="number" id="inputHeight" name="height" min="1" value="1" max="100">
+                Columns:
+                <input type="number" id="inputWeight" name="width" min="1" value="1" max="100">
+            </div>
+            <input type="submit" id="submit">
+        </form>
+    </div>
 
-    <h2>Choose Grid Size</h2>
-    <!-- <img src = "images/deadpool.jpg" id="pool">
-    <img src = "images/flippeddeadpool.jpg"> -->
-    <form id="sizePicker">
+
+    <div class="menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+        </svg>
+    </div>
+    <div class="canvas">
+        <h1>Pixel Art Maker</h1>
+<!--    <h2>Choose Grid Size</h2>
+
+     <form id="sizePicker">
         Grid Height:
         <input type="number" id="inputHeight" name="height" min="1" value="1" max="100">
         Grid Width:
         <input type="number" id="inputWeight" name="width" min="1" value="1" max="100">
         <input type="submit">
-        <!-- <input type="submit" value="Reset"> -->
-    </form>
+    </form> -->
 
     <h2>Pick A Color</h2>
     <input type="color" id="colorPicker">
 
     <h2>Design Canvas</h2>
     <table id="pixelCanvas"></table>
-
+    </div>
     <script src="designs.js"></script>
 </body>
 </html>

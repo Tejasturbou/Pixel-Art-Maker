@@ -36,4 +36,3 @@ function makeGrid() {
 	}
 	$('td').addClass('pixel');
 }
-
